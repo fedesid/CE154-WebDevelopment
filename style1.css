@@ -1,0 +1,623 @@
+/*1904802*/
+body {
+	background-color: rgb(100, 100, 100);
+	background-image: linear-gradient(to bottom right, rgb(100, 100, 100), rgb(49, 49, 49));
+	font-family: 'Jura', sans-serif;
+}
+
+footer {
+	height: 200px;
+	align-self: center;
+	background: inherit;
+	margin-top: 3%;
+	color: ivory;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#title{
+	position: relative;
+	bottom: 30%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-size: 150px;
+	font-weight: 999;
+	text-shadow: 2px 5px 10px black;
+}
+
+.error {
+	display: table;
+	width: auto; 
+	margin: 2% auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: center;
+}
+
+.top_header {
+	padding: 0px;
+	height: 300px;
+	background-color: #FF8000;
+	background-image: radial-gradient(ivory 5%, #FF8000 50%,  black 95%);
+	border-radius: 5px;
+	border-style: solid;
+	border-color: black;
+}
+
+.ciao{
+	display: grid;
+	grid-template-columns: 9% 1fr 9%;
+	grid-template-rows: 0.5fr;
+	grid-template-areas: 
+	"spacetaker top_nav profilepreview";
+	position: sticky;
+	top: 0;
+	margin-top: 1%;
+	z-index: 999;
+}
+
+.top_nav {
+	justify-self: center;
+	grid-area: top_nav;
+	border-style: solid;
+	border-color: black;	
+	background-color: ivory;
+	position: sticky;
+	top: 0;
+	border-radius: 5px;
+	z-index: 1;
+	height: 45px;
+	width: 98%;
+}
+
+.top_nav a{
+	float: left;
+	display: auto;
+	color: black;
+	padding: 14px 16px 13px 16px;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	width: auto;
+}
+
+.top_nav .searchbar{
+	float: right;
+	height: auto;
+}
+
+.top_nav input[type=text]{
+	padding: 15px;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 2px;
+	border-width: 0px 0px 0px 2px;
+	border-color: black;
+	background-color: #FF8000;
+	text-align: center;
+}
+
+.top_nav a:hover{
+	background-color: #FF8000;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	z-index: 999;
+	max-width: 12%;
+	height: 50px;
+	justify-content: center;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	font-weight: bold;	
+	border: none;
+	outline: none;
+	color: black;
+	width: 100%;
+	margin: 0 0 0 -5%;
+	background-color: inherit;
+	font-family: inherit;
+	
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: ivory;
+	border-style: solid;
+	border-radius: 2px;
+	border-width: 0px 3px 3px 3px;
+	border-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 9;
+	
+}
+
+.dropdown-content input[type="submit"] {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	margin: 0 0 0 0%;
+}
+
+.dropdown-content input:hover {
+	background-color: #FF8000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.profilepreview {
+	grid-area: profilepreview;
+	text-align: center;
+	background-color: #FF8000;
+	padding: 0px 30px 0px 30px;
+	border-style: solid solid solid solid;
+}
+
+
+.filters{
+	margin: 10px 10%;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters select{
+	background-color: ivory;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5%;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.filters select:hover{
+	background: #FF8000;
+}
+
+.filters option{
+	background: ivory;
+}
+
+.filters option:hover{
+	background: #FF8800;
+}
+
+.spacetaker{
+	grid-area: spacetaker;
+}
+
+.banner img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: auto;
+}
+
+.bestgameheader{
+	display: flex;
+	justify-content: flex-start;
+	margin: -0% 15% -3% 16%;
+}
+
+.bestgameheader h2{	
+	color: ivory;
+	border-radius: 5px;
+}
+
+.topbox {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	padding: 15px;
+	justify-content: space-around;
+	border-radius: 5%;
+	border-style: solid;
+	margin-top: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+.slideshow img{
+	display: flex;
+	position: relative;
+	margin: auto;
+	width: 700px;
+	height: 600px;
+	border-radius: 5%;
+	border-style: solid;
+	border-color: black;
+	object-fit: cover;
+}
+
+
+
+.slideshow:hover .middle{
+	opacity: 1;
+	
+}
+
+.topbox h2 {
+	color: white;
+	max-width: 136px;
+	margin: 2% auto 0% 10%;
+	padding: 5px 5px 5px;
+	background-color: #FF8000;
+	border-radius: 5px;
+}
+
+.topgames {
+	display: grid;
+	padding: 15px;
+	justify-content: space-around;	
+	grid-gap: 15px;
+	grid-template-columns: auto auto;
+}
+
+.topgame {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	background-color: #FF8000;
+	justify-content: space-around;
+	grid-template-columns: auto auto;
+	width: 150px;
+	border-radius: 5%;
+	border-style: solid;
+	border-color: black;
+}
+
+.topgame img {
+	max-width: 100%;
+	height: 100px;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+	display: flex;
+	border-radius: 5%;
+}
+
+.gameinfo {
+	text-align: center;
+}
+
+.midheader h2 {
+	color: ivory;
+	max-width: auto;
+	font-size: 40px;
+	margin: 2% auto 0% 10%;
+	padding: 5px 5px 5px;
+}
+
+.games_container {
+	opacity: 0.9;
+	max-width: 100%;
+	height: auto;
+	display: grid;
+	justify-content: space-around;
+	grid-gap: auto auto;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	background-color: #FF8000;
+	border-radius: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 30px 6px;
+}
+
+.game_box {
+	background-color: black;
+	border-radius: 15px;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+	max-width: 100%;
+	height: 83.5%;
+	margin: auto auto auto auto;
+}
+
+.game_img {
+	max-width: 100%;
+	border-radius: 15px;
+	width: 450px;
+	height: 330px;
+	border-style: solid;
+}
+
+.game_box img {
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	object-fit: cover;	
+}
+
+.game_box:hover .game_img{
+	opacity: 0.5;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: relative;
+	width: 50%;
+	height: 50px;
+	transform: translate(50%, -450%);
+}
+
+.game_box:hover .middle{
+	opacity: 1;
+}
+
+.text {
+	background-color: ivory;
+	border-color: black;
+	border-style: solid;
+	color: black;
+	font-size: 16px;
+	padding: 16px 10px;
+	border-radius: 15px;
+}
+
+#tlogin {
+	display: block;
+	width: 75%;
+	margin: auto;
+	font-size: 20;
+	color: black;
+	font-weight: bold;
+}
+
+.login {
+	display: flex;
+	max-width: 25%;
+	width: auto;
+	height: 40%;
+	margin: auto;
+	margin-top: 5%;
+	background-color: white;
+}
+
+.loginform {
+	margin: auto;
+	text-align: center;
+}	
+
+.login input{
+	margin: 70 auto;
+	text-align: center;
+	width: 75%;
+	padding: 12px 20px;
+	margin: 8px 8px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.managegames{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.addgame_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.managegame_text{
+	color: ivory;
+	display: flex;
+	justify-content: center;
+}
+
+.addgame_container .managegame, .removegame_container .managegame{
+	border-style: solid;
+	background-color: ivory;
+	border-color: black;
+	display: block;
+	text-align: center;
+	color: black;
+	width: auto;
+	padding: 2%;
+	margin: 1% auto 5% auto;
+}
+.addgame_container .managegame label, .removegame_container .managegame label{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.addgame_container .managegame input[type="text"], input[type="url"], input[type="number"], input[type="password"], select{
+	background-color: ivory;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5%;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.managegame input[type="submit"]{
+	background-color: #FF8000;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5%;
+	font-family: inherit;
+	font-size: 150%;
+}
+
+.gamepage_container{
+	display: block;
+	justify-content: center;
+}
+
+.infogame_box{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"img texts";
+	background-color: ivory;
+	border-style: solid;
+	border-radius: 5%;
+	margin: 1% auto 5% auto;
+	width: 50%;
+	padding: 2%;
+}
+
+.infogame_box .texts{
+	display: flex;
+	flex-direction: column;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 2fr 4fr 1fr;
+	grid-template-areas: 
+	"title"
+	"genre"
+	"rating"
+	"bookmark";
+}
+
+.infogame_box .texts .rating, .infogame_box .texts .title, .infogame_box .texts .genre, .infogame_box .texts .bookmark{
+	align-self: center;
+	text-align: center;
+}
+
+.gamepage_container .infogame_box img{
+	height: 450px;
+	width: 450px;
+	border-style: solid;
+}
+
+.gamepage_container .infogame_box .rating{
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%;
+	font-size: 800%;
+	padding: 2%;
+	height: auto;
+	margin: auto;
+}
+
+.gamepage_container .infogame_box .bookmark{
+	margin-top: 10px;
+}
+
+#bookmarkbtn{
+	background-color: #FF8000;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5%;
+	font-family: inherit;
+	font-size: 150%;
+}
+
+.gamepage_container .makereview{
+	display: block;
+	width: 70%;
+	margin: 1% auto 5% auto;
+	padding: 1%;
+	background-color: red;
+}
+
+.profile_container{
+	display: block;
+	justify-content: center;
+}
+
+.profile_container .profileinfobox{
+	background-color: ivory;
+	border-style: solid;
+	border-radius: 5%;
+	margin: 1% auto 5% auto;
+	width: 70%;
+	padding: 2%;
+}
+
+.bookmarks-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	
+}
+
+.bookmarks-container .topgame{
+	margin: 0.8%;
+}
+
+.reviewsbox{
+	background-color: #FF8000;
+	border-style: solid;
+	border-radius: 5%;
+	margin: 1% auto 5% auto;
+	width: 70%;
+	padding: 2%;
+}
+
+.reviewsbox label{
+	color: ivory;
+	font-size: 25px;
+	font-weight: bold; 
+}
+
+.review_container{
+	background-color: ivory;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	margin: 1%;
+	padding: 1%;
+}
+
+.makeReview_container{
+	display: flex;
+	justify-content: center;
+}
+
+.makeReview_container .makeReview{
+	border-style: solid;
+	background-color: ivory;
+	border-color: black;
+	display: block;
+	text-align: center;
+	color: black;
+	width: 50%;
+	padding: 2%;
+	margin: 1% auto 5% auto;
+}
+.makeReview_container .makeReview label{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.makeReview_container .makeReview input[type="text"], input[type="url"], input[type="number"], input[type="password"], select, textarea{
+	background-color: ivory;
+	border-style: solid;
+	border-color: black;
+	border-radius: 0%;
+	font-family: inherit;
+	font-size: 100%;
+	resize: none;
+}
+
+.makeReview_container .makeReview input[type="submit"]{
+	background-color: #FF8000;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5%;
+	font-family: inherit;
+	font-size: 150%;
+}

@@ -1,0 +1,158 @@
+body {
+	background-color: ivory;
+}
+
+#title{
+	color: black;
+	font-size: 300%;
+	text-align: center;
+	font-weight: 999;
+}
+
+.top_header {
+	background-color: #FF8000;
+	padding: 1px;			
+	border-radius: 5px;
+}
+
+.top_nav {
+	opacity: 0.8;
+	display: flex;
+	border-style: solid;
+	border-color: black;
+	overflow: hidden;
+	background-color: ivory;
+	position: sticky;
+	top: 0;
+	border-radius: 5px;
+	z-index: 999;		
+	margin-top: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.top_nav a{
+	float: left;
+	display: inline;
+	color: black;
+	padding: 15px;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.top_nav a:hover{
+	background-color: #FF8000;
+}
+
+.banner img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: auto;
+}
+
+.games_container {
+	opacity: 0.9;
+	max-width: 100%;
+	height: auto;
+	display: grid;
+	justify-content: space-around;
+	grid-gap: auto auto;
+	grid-template-columns: auto auto auto;
+	background-color: ivory;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: black;
+	padding-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.game_box {
+	position: relative;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.game_img {
+	max-width: 100%;
+	border-radius: 15px;
+	width: 450px;
+	height: 330px;
+}
+
+.game_box img {
+	opacity: 1;
+	diplay: block;
+	transition: .5s ease;
+}
+
+.game_box:hover .game_img{
+	opacity: 0.5;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: relative;
+	width: 50%;
+	height: 50px;
+	transform: translate(50%, -450%);
+}
+
+.game_box:hover .middle{
+	opacity: 1;
+}
+
+.text {
+	background-color: ivory;
+	border-color: black;
+	border-style: solid;
+	color: black;
+	font-size: 16px;
+	padding: 16px 10px;
+	border-radius: 15px;
+}
+
+#tlogin {
+	display: block;
+	width: 75%;
+	margin: auto;
+	font-size: 20;
+	color: black;
+	font-weight: bold;
+}
+
+.login {
+	display: flex;
+	max-width: 25%;
+	width: auto;
+	height: 40%;
+	margin: auto;
+	margin-top: 5%;
+	background-color: white;
+}
+
+.loginform {
+	margin: auto;
+	text-align: center;
+}	
+
+.login input{
+	margin: 70 auto;
+	text-align: center;
+	width: 75%;
+	padding: 12px 20px;
+	margin: 8px 8px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-sizing: border-box;
+}

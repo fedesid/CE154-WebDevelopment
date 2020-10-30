@@ -1,0 +1,4 @@
+-register process
+-delete games
+-order by
+-games rating changes as users make reviews
